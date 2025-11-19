@@ -478,6 +478,49 @@ footer a:hover {
     font-size: 0.9rem;
 }
 
+/* Pre-order Button Styles */
+.pre-order-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    min-width: 120px;
+}
+
+.pre-order-btn:hover {
+    background-color: #219653;
+    text-decoration: none;
+}
+
+/* Update table button styles */
+.product-table .pre-order-btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.product-table .pre-order-btn:hover {
+    background: #219653;
+    text-decoration: none;
+}
+
 /* Responsive adjustments for gallery */
 @media (max-width: 768px) {
     .gallery-container {
@@ -488,6 +531,12 @@ footer a:hover {
     .image-gallery {
         padding: 1.5rem;
     }
+    
+    .product-table .pre-order-btn {
+        min-width: 100px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -497,5 +546,11 @@ footer a:hover {
     
     .gallery-img {
         height: 120px;
+    }
+    
+    .product-table .pre-order-btn {
+        min-width: 90px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
     }
 }
